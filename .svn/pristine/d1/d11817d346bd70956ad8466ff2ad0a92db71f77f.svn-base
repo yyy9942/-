@@ -1,0 +1,17 @@
+package roomInfo.dao;
+
+import java.util.Map;
+
+import vo.ContractVO;
+import vo.LikeVO;
+
+public interface IRoomInfoDao {
+
+	public int memLikeRoom(Map<String, Object> param);
+	public void insertLike(LikeVO lv);
+	public void deleteLike(int likeId);
+	public int getLikeCount(int roomId);
+	public int getRoomView(int roomId);
+	public void sendContract(ContractVO cv);
+	public int isContract(String mem_id, int room_id);
+}

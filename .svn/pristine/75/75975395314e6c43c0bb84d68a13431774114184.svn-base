@@ -1,0 +1,11 @@
+package owner.service;
+
+import vo.RoomVO;
+
+public interface IRegistRoomService {
+	
+	public int insertRegistRoom(RoomVO rv);
+	
+	
+	public String getAddress(String searchStr);
+}
